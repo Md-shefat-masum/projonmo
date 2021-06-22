@@ -521,11 +521,11 @@ nav .right ul li a {
 .product_info .bottom_info li span {
   font-weight: 600;
 }
-.product_info .social_links {
+.social_links {
   display: inline-flex;
   margin-top: 20px;
 }
-.product_info .social_links li a {
+.social_links li a {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -536,7 +536,7 @@ nav .right ul li a {
   border-radius: 50%;
   margin-right: 5px;
 }
-.product_info .social_links li a:hover {
+.social_links li a:hover {
   background: silver;
   color: var(--black);
 }
@@ -619,7 +619,7 @@ nav .right ul li a {
 .blog_list_body .img img {
   width: 100%;
 }
-.blog_list_body .description {
+.blog_list_body .description p {
   text-align: justify;
   margin: 30px 0px;
 }
@@ -654,6 +654,40 @@ nav .right ul li a {
 }
 .blog_list_body .bottom_link li a span {
   color: #334862;
+}
+label {
+  display: block;
+  font-weight: 600;
+}
+input,
+textarea {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 0 0.75em;
+  height: 2.507em;
+  font-size: 0.97em;
+  border-radius: 0;
+  max-width: 100%;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 30px;
+}
+.comment_body {
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-top: 15px;
+  padding: 15px 25px 0;
+}
+.comment_body h5 {
+  color: #555;
+  font-weight: 600;
+}
+.comment_body p {
+  margin: 20px 0px;
+}
+.comment_body textarea {
+  height: 150px;
 }
 footer {
   background: #777;
