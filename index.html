@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Projonmo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.projonmo.pub/wp-content/uploads/2018/11/favicon.png" sizes="32x32" />
+    <link rel="icon" href="https://www.projonmo.pub/wp-content/uploads/2018/11/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://www.projonmo.pub/wp-content/uploads/2018/11/favicon.png" />
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="5000000">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+    <meta name="keywords" content="Projonmo, ecommerce">
+    <meta name="description" content="you learn every things about html">
+    <meta name="author" content="mr abdul kuddus">
+    <meta name="copyrigth" content="www.mysite.com">
+    <meta name="revisit" content="5 days">
+
+    <meta property="og:title" content="Projonmo" />
+    <meta property="og:site_name" content="Projonmo" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="ecommerce">
+        <header>
+            <div class="container">
+                <ul class="header_menu_list">
+                    <li><a href="#">পরিবেশক</a></li>
+                    <li><a href="#">অনলাইন পরিবেশক</a></li>
+                    <li><a href="#">সকল বই</a></li>
+                    <li><a href="#">বুক কভার</a></li>
+                    <li><a href="#">SMS Subscription</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="side_nav">
+                            <div class="overlay"></div>
+                            <div class="side_nav_body">
+                                <form action="#">
+                                    <input placeholder="search" type="text">
+                                    <button><i class="fas fa-search"></i></button>
+                                </form>
+                                <ul>
+                                    <li>
+                                        <a href="#">হোম</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">সকল বই</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">প্রজন্ম ব্লগ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="left">
+                            <i class="fas fa-align-left triger_btn"></i>
+
+                            <ul>
+                                <li>
+                                    <a href="#">সকল বই</a>
+                                    <a href="#">প্যাকেজ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mid">
+                            <img src="https://www.projonmo.pub/wp-content/uploads/2019/08/Projonmo-Login.png"
+                                alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>CART / ৳ 0</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="common-heading">
+                            <h2>
+                                <span>সর্বশেষ প্রকাশিত বই</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3" v-for="item in 4" :key="item">
+                        <div class="product_body">
+                            <div class="top">
+                                <span>-21%</span>
+                                <img src="https://www.projonmo.pub/wp-content/uploads/2021/03/Beche-Thakte-Sikhun-For-Sell-247x247.jpg"
+                                    alt="image">
+                            </div>
+                            <div class="bottom">
+                                <a href="#">
+                                    <h4>বেঁচে থাকতে শিখুন</h4>
+                                </a>
+                                <ul>
+                                    <li><del>৳ 300</del></li>
+                                    <li>৳ 237</li>
+                                </ul>
+                                <a href="#" class="custom_btn1">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="common-heading">
+                            <h2>
+                                <span>প্রকাশিতব্য বই</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3" v-for="item in 4" :key="item">
+                        <div class="product_body">
+                            <div class="top">
+                                <span>-21%</span>
+                                <img src="https://www.projonmo.pub/wp-content/uploads/2021/03/Beche-Thakte-Sikhun-For-Sell-247x247.jpg"
+                                    alt="image">
+                            </div>
+                            <div class="bottom">
+                                <a href="#">
+                                    <h4>বেঁচে থাকতে শিখুন</h4>
+                                </a>
+                                <ul>
+                                    <li><del>৳ 300</del></li>
+                                    <li>৳ 237</li>
+                                </ul>
+                                <a href="#" class="custom_btn1">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="common-heading">
+                            <h2>
+                                <span>প্রজন্ম ব্লগ</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="blog_body">
+                            <div class="top">
+                                <span>
+                                    23 <br> May
+                                </span>
+                                <img src="https://www.projonmo.pub/wp-content/uploads/2021/05/fre-writting.jpg"
+                                    alt="image">
+                            </div>
+                            <div class="bottom">
+                                <h4>ফ্রি রাইটিং শিখুন</h4>
+                                <p>
+                                    লেখালেখির জন্য যে কয়টি সৃজনশীল অনুশীলন রয়েছে, ফ্রি-রাইটিং তার মধ্যে অন্যতম। একে
+                                    চেতনার প্রবাহও বলা হয়। সাদা পৃষ্ঠার জমিনে কোনোরূপ বাধা-বিঘ্নতা ছাড়া ভাবনার
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" v-for="item in 3" :key="item">
+                        <div class="blog_body">
+                            <div class="top">
+                                <span>
+                                    23 <br> May
+                                </span>
+                                <img src="https://www.projonmo.pub/wp-content/uploads/2021/05/fre-writting.jpg"
+                                    alt="image">
+                            </div>
+                            <div class="bottom">
+                                <h4>ডিলিট করা ছবি ফিরিয়ে আনা যায় কিভাবে?</h4>
+                                <p>
+                                    লেখালেখির জন্য যে কয়টি সৃজনশীল অনুশীলন রয়েছে, ফ্রি-রাইটিং তার মধ্যে অন্যতম। একে
+                                    চেতনার প্রবাহও বলা হয়। সাদা পৃষ্ঠার জমিনে কোনোরূপ বাধা-বিঘ্নতা ছাড়া ভাবনার
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>যোগাযোগ</h3>
+                        <a href="#" class="footer_logo">
+                            <img src="https://www.projonmo.pub/wp-content/uploads/2019/08/Projonmo-Login-1.png" alt="logo">
+                        </a>
+                        <ul>
+                            <li>
+                                <span>অফিস:</span> ৪১৬, ৪৫ কম্পিউটার কমপ্লেক্স মার্কেট ( ৪র্থ তলা), বাংলাবাজার, ঢাকা - ১১০০
+                            </li>
+                            <li>
+                                <span>হেল্পলাইনঃ</span> 01991703070 01572410018
+                            </li>
+                            <li>
+                                <span>বিক্রয় কেন্দ্র:</span> আমাদের বই ডট কম, দোকান নং-০৪, ৩৪ নর্থব্রুক হল রোড, ২য় তলা, বাংলাবাজার, ঢাকা-১১১০০
+                            </li>
+                            <li>
+                                <span>ফোন:</span> 01954014720
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>প্রজন্ম ব্লগ</h3>
+                        <ul class="mid_part">
+                            <li v-for="item in 4" :key="item">
+                                <div class="left">
+                                    <img class="img-fluid" src="https://www.projonmo.pub/wp-content/uploads/2021/05/hindu-rastro-280x280.jpg" alt="">
+                                    <span class="date">
+                                        <span>23</span>
+                                        <span>May</span>
+                                    </span>
+                                </div>
+                                <a href="#">
+                                    ভারতের ভিতরে নতুন হিন্দু রাষ্ট্রের পরিকল্পনা
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>সাবস্ক্রাইব করুন</h3>
+                        <ul class="right">
+                            <li>
+                                প্রজন্ম পাবলিকেশনের সকল খবরাখবর ইমেইলের মাধ্যমে আপডেট পেতে সাবস্ক্রাইব করুন
+                            </li>
+                            <li>
+                                <form action="#">
+                                    <input type="text" placeholder="Your Email (required) ">
+                                    <button class="custom_btn2">Sign Up</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script> -->
+    <script src="/js/custom.js"></script>
+</body>
+
+</html>
