@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -58,7 +59,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="side_nav">
+                        <div class="side_nav" id="side_nav">
                             <div class="overlay"></div>
                             <div class="side_nav_body">
                                 <form action="#">
@@ -124,7 +125,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 offset-md-1">
+                    <div class="col-md-6 col-lg-4 offset-lg-1">
                         <div class="product_info">
                             <h3>বেঁচে থাকতে শিখুন</h3>
                             <span class="price">
@@ -252,7 +253,7 @@
         <section class="my-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3" v-for="item in 4" :key="item">
+                    <div class="col-6 col-sm-4 col-lg-3 " v-for="item in 4" :key="item">
                         <div class="product_body">
                             <div class="top">
                                 <span>-21%</span>
@@ -278,7 +279,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-4">
                         <h3>যোগাযোগ</h3>
                         <a href="#" class="footer_logo">
                             <img src="https://www.projonmo.pub/wp-content/uploads/2019/08/Projonmo-Login-1.png"
@@ -301,7 +302,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h3>প্রজন্ম ব্লগ</h3>
                         <ul class="mid_part">
                             <li v-for="item in 4" :key="item">
@@ -319,7 +320,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h3>সাবস্ক্রাইব করুন</h3>
                         <ul class="right">
                             <li>

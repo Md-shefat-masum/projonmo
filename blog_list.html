@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -116,33 +117,38 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 pe-lg-4" style="border-right: 1px solid rgba(119, 119, 119, 0.281);">
-                        <div class="blog_list_body" v-for="item in 10" :key="item">
-                            <h6>বইকথন</h6>
-                            <h5>
-                                ভারতের ভিতরে নতুন হিন্দু রাষ্ট্রের পরিকল্পনা
-                            </h5>
-                            <p class="date">POSTED ON MAY 23, 2021 BY ADMIN</p>
-                            <div class="img">
-                                <span class="date">
-                                    <span>23</span>
-                                    <span>May</span>
-                                </span>
-                                <img src="https://www.projonmo.pub/wp-content/uploads/2021/05/hindu-rastro.jpg"
-                                    alt="image">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-12" v-for="item in 10" :key="item">
+                                <div class="blog_list_body" >
+                                    <h6>বইকথন</h6>
+                                    <h5>
+                                        ভারতের ভিতরে নতুন হিন্দু রাষ্ট্রের পরিকল্পনা
+                                    </h5>
+                                    <p class="date">POSTED ON MAY 23, 2021 BY ADMIN</p>
+                                    <div class="img">
+                                        <span class="date">
+                                            <span>23</span>
+                                            <span>May</span>
+                                        </span>
+                                        <img src="https://www.projonmo.pub/wp-content/uploads/2021/05/hindu-rastro.jpg"
+                                            alt="image">
+                                    </div>
+                                    <p class="description">
+                                        গেরুয়া রঙের পতাকা, মাঝখানে সোনালী মশাল। থাকবে আলাদা সংবিধানও। ইসরায়েলের সাথে কথাও
+                                        চুড়ান্ত। ইসরায়েলের কাছে চারটি জিনিস চাওয়া হয়েছে, নিরবিচ্ছিন্ন প্রশিক্ষণ ও অস্ত্রের
+                                        জোগান। তেল আবিবে গেরুয়া পতাকা নিয়ে অফিস শুরু করতে দিতে হবে, রাজনৈতিক আশ্রয় এবং হিন্দু
+                                        রাষ্ট্রের প্রতিষ্ঠা নিয়ে জাতিসংঘে সমর্থন করতে হবে। ইসরায়েল ছয় মাস অপেক্ষা করতে বলেছে ও
+                                        দুটো জিনিস মেনে
+                                    </p>
+                                    <a href="#" class="readmore">Continue reading <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <ul class="bottom_link">
+                                        <li><a href="#">Posted in <span>বইকথন</span></a></li>
+                                        <li><a href="#">Leave a comment</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <p class="description">
-                                গেরুয়া রঙের পতাকা, মাঝখানে সোনালী মশাল। থাকবে আলাদা সংবিধানও। ইসরায়েলের সাথে কথাও
-                                চুড়ান্ত। ইসরায়েলের কাছে চারটি জিনিস চাওয়া হয়েছে, নিরবিচ্ছিন্ন প্রশিক্ষণ ও অস্ত্রের
-                                জোগান। তেল আবিবে গেরুয়া পতাকা নিয়ে অফিস শুরু করতে দিতে হবে, রাজনৈতিক আশ্রয় এবং হিন্দু
-                                রাষ্ট্রের প্রতিষ্ঠা নিয়ে জাতিসংঘে সমর্থন করতে হবে। ইসরায়েল ছয় মাস অপেক্ষা করতে বলেছে ও
-                                দুটো জিনিস মেনে
-                            </p>
-                            <a href="#" class="readmore">Continue reading <i class="fas fa-long-arrow-alt-right"></i></a>
-                            <ul class="bottom_link">
-                                <li><a href="#">Posted in <span>বইকথন</span></a></li>
-                                <li><a href="#">Leave a comment</a></li>
-                            </ul>
                         </div>
+                        
                     </div>
                     <div class="col-lg-3 ps-lg-4">
                         <h3 class="published_book">প্রকাশিত বই</h3>
@@ -168,7 +174,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-4">
                         <h3>যোগাযোগ</h3>
                         <a href="#" class="footer_logo">
                             <img src="https://www.projonmo.pub/wp-content/uploads/2019/08/Projonmo-Login-1.png"
@@ -191,7 +197,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h3>প্রজন্ম ব্লগ</h3>
                         <ul class="mid_part">
                             <li v-for="item in 4" :key="item">
@@ -209,7 +215,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h3>সাবস্ক্রাইব করুন</h3>
                         <ul class="right">
                             <li>
@@ -226,6 +232,7 @@
                 </div>
             </div>
         </footer>
+
         <section class="lower_footer">
             <div class="container">
                 <ul class="top_ul">

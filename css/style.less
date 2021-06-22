@@ -79,6 +79,7 @@ header {
     display: inline-flex;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
 
     li {
         a {
@@ -573,7 +574,7 @@ nav {
         }
 
         p {
-            text-align: center;
+            text-align: justify;
             color: #777777;
         }
     }
@@ -614,10 +615,12 @@ nav {
 
                 &:first-child {
                     left: 0;
+                    top: 0;
                 }
 
                 &:last-child {
                     right: 0;
+                    top: 0;
                 }
             }
 

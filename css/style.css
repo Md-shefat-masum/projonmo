@@ -69,6 +69,7 @@ header {
   display: inline-flex;
   justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 .header_menu_list li a {
   color: var(--off_white);
@@ -466,7 +467,7 @@ nav .right ul li a {
   font-size: 20px;
 }
 .blog_body .bottom p {
-  text-align: center;
+  text-align: justify;
   color: #777777;
 }
 .product_info h3 {
@@ -499,9 +500,11 @@ nav .right ul li a {
 }
 .product_info .cart_form .cart_amount label:first-child {
   left: 0;
+  top: 0;
 }
 .product_info .cart_form .cart_amount label:last-child {
   right: 0;
+  top: 0;
 }
 .product_info .cart_form .cart_amount input {
   width: 150px;

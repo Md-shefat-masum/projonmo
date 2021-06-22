@@ -1,0 +1,128 @@
+@media screen and (max-width: 575.99px) {
+    nav .mid {
+        height: unset;
+        margin: 10px 0px;
+    }
+
+    nav .right ul {
+        margin-bottom: 20px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .common-heading h2 span {
+        width: 100%;
+    }
+
+    .common-heading h2::before,
+    .common-heading h2::after {
+        display: none;
+    }
+
+    .product_body {
+        margin-bottom: 30px;
+    }
+
+    .blog_body {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    footer h3 {
+        margin-top: 30px;
+    }
+
+    .product_body .bottom a h4 {
+        font-size: 14px;
+    }
+
+    .product_image{
+        margin-bottom: 30px;
+    }
+    .product_info .cart_form .cart_amount label:last-child{
+        top: 0;
+    }
+    .product_review .nav_btns li .custom_btn2{
+        margin-bottom: 20px;
+    }
+
+    .blog_list_body .description{
+        text-align: justify;
+        padding: 20px 0px;
+    }
+}
+
+@media (min-width: 576px) {
+    nav .mid {
+        height: unset;
+        margin: 10px 0px;
+    }
+
+    nav .right ul {
+        margin-bottom: 20px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .common-heading h2 span {
+        width: 100%;
+    }
+
+    .common-heading h2::before,
+    .common-heading h2::after {
+        display: none;
+    }
+
+    .product_body {
+        margin-bottom: 30px;
+    }
+
+    .blog_body {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    footer h3 {
+        margin-top: 30px;
+    }
+
+    .product_body .bottom a h4 {
+        font-size: 14px;
+    }
+    .blog_list_body .description{
+        text-align: justify;
+        padding: 20px 0px;
+    }
+    .recent_view{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .recent_view li{
+        width: 48%;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    nav .right ul li:first-child span{
+        display: none;
+    }
+    .recent_view{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .recent_view li{
+        width: 48%;
+    }
+}
+
+@media (min-width: 992px) {
+    .recent_view li{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1400px) {}
