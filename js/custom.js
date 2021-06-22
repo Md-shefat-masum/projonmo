@@ -1,10 +1,20 @@
 $(function () {
-    $('.triger_btn').on('click', function () {
-        $('.side_nav').addClass('active')
+    $('.triger_btn').on('click', function (e) {
+        e.preventDefault();
+        $('#side_nav').addClass('active')
     });
 
-    $('.side_nav .overlay').on('click', function () {
-        $('.side_nav').removeClass('active')
+    $('#side_nav .overlay').on('click', function () {
+        $('#side_nav').removeClass('active')
+    });
+
+    $('.filter_trigger').on('click', function (e) {
+        e.preventDefault();
+        $('#side_nav2').addClass('active')
+    });
+
+    $('#side_nav2 .overlay').on('click', function () {
+        $('#side_nav2').removeClass('active')
     });
 })
 

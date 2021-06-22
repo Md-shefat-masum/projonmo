@@ -37,6 +37,9 @@
 
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/prism.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -58,7 +61,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="side_nav">
+                        <div class="side_nav" id="side_nav">
                             <div class="overlay"></div>
                             <div class="side_nav_body">
                                 <form action="#">
@@ -116,21 +119,69 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="common-heading">
-                            <h2>
-                                <span>সর্বশেষ প্রকাশিত বই</span>
-                            </h2>
+                    <div class="col-md-6">
+                        <a href="#" class="filter_trigger">
+                            <i class="fas fa-list-ul"></i>
+                            FILTER
+                        </a>
+                        <div class="side_nav side_nav2" id="side_nav2">
+                            <div class="overlay"></div>
+                            <div class="side_nav_body">
+                                <h2>BROWSE</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#">নন ফিকশন</a>
+                                        <ul>
+                                            <li><a href="#">আত্ম-উন্নয়ন</a></li>
+                                            <li><a href="#">আত্মজীবনী</a></li>
+                                            <li><a href="#">ইতিহাস</a></li>
+                                            <li><a href="#">কারাজীবন</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">বিজনেস</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ম্যাগাজিন</a>
+                                    </li>
+                                </ul>
+                                
+                                <h2 class="heading_two">FILTER BY PRICE</h2>
+                                <div id="steps-slider"></div>
+                                <div class="slider_output">
+                                    <input type="text" id="input-with-keypress-1">
+                                    <input type="text" id="input-with-keypress-0">
+                                </div>
+                               
+                                <button class="custom_btn2" style="padding: 5px 20px;">Filter</button>
+                                <br>
+
+                                <h2 class="mt-5">RECENTLY VIEWED</h2>
+                                <ul class="recent_view">
+                                    <li v-for="item in 4" :key="item">
+                                        <div class="left">
+                                            <img src="https://www.projonmo.pub/wp-content/uploads/2020/11/Sobari-Golpo-Ache-for-Sell-247x247.jpg" alt="">
+                                        </div>
+                                        <div class="right">
+                                           <a href="#"><h3>সবারই গল্প আছে</h3></a> 
+                                            <span class="price">
+                                                <del>৳ 330 </del>
+                                                <span>৳ 261</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="py-5 my-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3" v-for="item in 4" :key="item">
+                    <div class="col-lg-3 mb-5" v-for="item in 16" :key="item">
                         <div class="product_body">
                             <div class="top">
                                 <span>-21%</span>
@@ -146,103 +197,6 @@
                                     <li>৳ 237</li>
                                 </ul>
                                 <a href="#" class="custom_btn1">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="common-heading">
-                            <h2>
-                                <span>প্রকাশিতব্য বই</span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3" v-for="item in 4" :key="item">
-                        <div class="product_body">
-                            <div class="top">
-                                <span>-21%</span>
-                                <img src="https://www.projonmo.pub/wp-content/uploads/2021/03/Beche-Thakte-Sikhun-For-Sell-247x247.jpg"
-                                    alt="image">
-                            </div>
-                            <div class="bottom">
-                                <a href="#">
-                                    <h4>বেঁচে থাকতে শিখুন</h4>
-                                </a>
-                                <ul>
-                                    <li><del>৳ 300</del></li>
-                                    <li>৳ 237</li>
-                                </ul>
-                                <a href="#" class="custom_btn1">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="common-heading">
-                            <h2>
-                                <span>প্রজন্ম ব্লগ</span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="blog_body">
-                            <div class="top">
-                                <span>
-                                    23 <br> May
-                                </span>
-                                <img src="https://www.projonmo.pub/wp-content/uploads/2021/05/fre-writting.jpg"
-                                    alt="image">
-                            </div>
-                            <div class="bottom">
-                                <h4>ফ্রি রাইটিং শিখুন</h4>
-                                <p>
-                                    লেখালেখির জন্য যে কয়টি সৃজনশীল অনুশীলন রয়েছে, ফ্রি-রাইটিং তার মধ্যে অন্যতম। একে
-                                    চেতনার প্রবাহও বলা হয়। সাদা পৃষ্ঠার জমিনে কোনোরূপ বাধা-বিঘ্নতা ছাড়া ভাবনার
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3" v-for="item in 3" :key="item">
-                        <div class="blog_body">
-                            <div class="top">
-                                <span>
-                                    23 <br> May
-                                </span>
-                                <img src="https://www.projonmo.pub/wp-content/uploads/2021/05/fre-writting.jpg"
-                                    alt="image">
-                            </div>
-                            <div class="bottom">
-                                <h4>ডিলিট করা ছবি ফিরিয়ে আনা যায় কিভাবে?</h4>
-                                <p>
-                                    লেখালেখির জন্য যে কয়টি সৃজনশীল অনুশীলন রয়েছে, ফ্রি-রাইটিং তার মধ্যে অন্যতম। একে
-                                    চেতনার প্রবাহও বলা হয়। সাদা পৃষ্ঠার জমিনে কোনোরূপ বাধা-বিঘ্নতা ছাড়া ভাবনার
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -311,6 +265,7 @@
                 </div>
             </div>
         </footer>
+
         <section class="lower_footer">
             <div class="container">
                 <ul class="top_ul">
@@ -341,7 +296,98 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/vue.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script> -->
+    <script src="js/wNumb.js"></script>
+    <script src="js/nouislider.js"></script>
+
     <script src="js/custom.js"></script>
+
+    <script>
+        var stepsSlider = document.getElementById('steps-slider');
+        var input0 = document.getElementById('input-with-keypress-0');
+        var input1 = document.getElementById('input-with-keypress-1');
+        var inputs = [input0, input1];
+
+        noUiSlider.create(stepsSlider, {
+            start: [20, 80],
+            connect: true,
+            tooltips: [true, wNumb({ decimals: 1 })],
+            range: {
+                'min': [0],
+                '10%': [10, 10],
+                '50%': [80, 50],
+                '80%': 150,
+                'max': 200
+            }
+        });
+
+        stepsSlider.noUiSlider.on('update', function (values, handle) {
+            inputs[handle].value = values[handle];
+        });
+    </script>
+    <script>
+        // Listen to keydown events on the input field.
+        inputs.forEach(function (input, handle) {
+
+            input.addEventListener('change', function () {
+                stepsSlider.noUiSlider.setHandle(handle, this.value);
+            });
+
+            input.addEventListener('keydown', function (e) {
+
+                var values = stepsSlider.noUiSlider.get();
+                var value = Number(values[handle]);
+
+                // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+                var steps = stepsSlider.noUiSlider.steps();
+
+                // [down, up]
+                var step = steps[handle];
+
+                var position;
+
+                // 13 is enter,
+                // 38 is key up,
+                // 40 is key down.
+                switch (e.which) {
+
+                    case 13:
+                        stepsSlider.noUiSlider.setHandle(handle, this.value);
+                        break;
+
+                    case 38:
+
+                        // Get step to go increase slider value (up)
+                        position = step[1];
+
+                        // false = no step is set
+                        if (position === false) {
+                            position = 1;
+                        }
+
+                        // null = edge of slider
+                        if (position !== null) {
+                            stepsSlider.noUiSlider.setHandle(handle, value + position);
+                        }
+
+                        break;
+
+                    case 40:
+
+                        position = step[0];
+
+                        if (position === false) {
+                            position = 1;
+                        }
+
+                        if (position !== null) {
+                            stepsSlider.noUiSlider.setHandle(handle, value - position);
+                        }
+
+                        break;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

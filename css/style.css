@@ -229,6 +229,84 @@ nav .right ul li a {
   background: rgba(102, 102, 102, 0.198);
   color: #3b3b3b;
 }
+.side_nav .side_nav_body ul li ul {
+  padding-left: 30px;
+  border-left: 1px solid rgba(102, 102, 102, 0.198);
+  margin-bottom: 20px;
+}
+.side_nav .side_nav_body ul li ul li a {
+  border: 0;
+  padding: 4px 5px;
+}
+.side_nav h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.side_nav h2::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 50%;
+  height: 2px;
+  background: rgba(102, 102, 102, 0.198);
+}
+.side_nav .heading_two {
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+.side_nav .slider_output {
+  display: flex;
+  justify-content: space-between;
+}
+.side_nav .slider_output input {
+  width: 40%;
+  margin-top: 15px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #acacac;
+}
+.side_nav .recent_view li {
+  display: flex;
+  margin-bottom: 20px;
+}
+.side_nav .recent_view li .left {
+  width: 70px;
+}
+.side_nav .recent_view li .left img {
+  width: 100%;
+}
+.side_nav .recent_view li .right {
+  padding-left: 10px;
+}
+.side_nav .recent_view li .right a {
+  padding: 0;
+}
+.side_nav .recent_view li .right a h3 {
+  font-size: 18px;
+}
+.side_nav .recent_view li .right a:hover {
+  background: unset;
+  color: var(--black);
+}
+.side_nav .recent_view li .right .price {
+  padding-left: 10px;
+  font-size: 18px;
+}
+.side_nav .recent_view li .right .price span {
+  margin-left: 10px;
+}
+.filter_trigger {
+  color: var(--black);
+  padding: 10px 0px;
+  font-size: 22px;
+}
+.side_nav2 .side_nav_body ul li:first-child a {
+  border-top: 0;
+}
 .common-heading {
   padding: 80px 0px;
 }
@@ -368,6 +446,98 @@ nav .right ul li a {
   text-align: center;
   color: #777777;
 }
+.product_info h3 {
+  color: #555;
+  font-size: 28px;
+  font-weight: 600;
+}
+.product_info .price {
+  font-size: 22px;
+  margin: 10px 0px;
+  display: inline-block;
+}
+.product_info .price span {
+  margin-left: 20px;
+}
+.product_info .cart_form .cart_amount {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+}
+.product_info .cart_form .cart_amount label {
+  border: 1px solid #ddd;
+  padding: 5px 8px;
+  height: 40px;
+  margin: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.product_info .cart_form .cart_amount label:first-child {
+  left: 0;
+}
+.product_info .cart_form .cart_amount label:last-child {
+  right: 0;
+}
+.product_info .cart_form .cart_amount input {
+  width: 150px;
+  height: 40px;
+  margin: 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 0px 28px;
+}
+.product_info .bottom_info {
+  margin-top: 30px;
+}
+.product_info .bottom_info li {
+  padding: 5px 0px;
+}
+.product_info .bottom_info li span {
+  font-weight: 600;
+}
+.product_info .social_links {
+  display: inline-flex;
+  margin-top: 20px;
+}
+.product_info .social_links li a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid silver;
+  color: silver;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.product_info .social_links li a:hover {
+  background: silver;
+  color: var(--black);
+}
+.product_review {
+  padding-top: 50px;
+}
+.product_review .nav_btns li .custom_btn2 {
+  border: 1px solid var(--brand);
+  color: var(--black);
+  background: transparent;
+  margin: 0px 5px;
+}
+.product_review .nav_btns li .custom_btn2.active {
+  background: var(--brand);
+  color: white;
+}
+.product_review .nav_btns li .custom_btn2:hover {
+  background: var(--brand);
+  color: white;
+}
+.product_review p {
+  color: var(--black);
+  margin: 30px 0px;
+}
 footer {
   background: #777;
   padding: 50px 0px;
@@ -459,4 +629,28 @@ footer .right form input {
 }
 footer .right form input::placeholder {
   color: var(--white);
+}
+.lower_footer {
+  background: #5b5b5b;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.lower_footer .top_ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.lower_footer .top_ul li a {
+  color: #FFFFFF80;
+  padding: 5px;
+}
+.lower_footer .top_ul li a:hover {
+  color: var(--white2);
+}
+.lower_footer p {
+  color: #FFFFFF80;
+  padding-top: 5px;
+}
+.lower_footer p span {
+  font-weight: 600;
 }
