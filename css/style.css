@@ -269,35 +269,41 @@ nav .right ul li a {
   text-align: center;
   border: 1px solid #acacac;
 }
-.side_nav .recent_view li {
+.recent_view li {
   display: flex;
-  margin-bottom: 20px;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #94949459;
 }
-.side_nav .recent_view li .left {
+.recent_view li .left {
   width: 70px;
 }
-.side_nav .recent_view li .left img {
+.recent_view li .left img {
   width: 100%;
 }
-.side_nav .recent_view li .right {
+.recent_view li .right {
   padding-left: 10px;
+  flex: 1;
 }
-.side_nav .recent_view li .right a {
+.recent_view li .right a {
   padding: 0;
+  width: 100%;
+  color: #334862;
 }
-.side_nav .recent_view li .right a h3 {
+.recent_view li .right a h3 {
   font-size: 18px;
 }
-.side_nav .recent_view li .right a:hover {
+.recent_view li .right a:hover {
   background: unset;
   color: var(--black);
 }
-.side_nav .recent_view li .right .price {
+.recent_view li .right .price {
   padding-left: 10px;
   font-size: 18px;
 }
-.side_nav .recent_view li .right .price span {
+.recent_view li .right .price span {
   margin-left: 10px;
+  font-weight: 600;
 }
 .filter_trigger {
   color: var(--black);
@@ -343,6 +349,23 @@ nav .right ul li a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.published_book {
+  color: #777;
+  font-size: 19px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+.published_book::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  left: 0;
+  width: 20%;
+  background: #8f8f8f;
+  bottom: 0;
 }
 .product_body .top {
   position: relative;
@@ -538,6 +561,100 @@ nav .right ul li a {
   color: var(--black);
   margin: 30px 0px;
 }
+.blog_list_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+.blog_list_body h6,
+.blog_list_body h5,
+.blog_list_body p {
+  text-align: center;
+}
+.blog_list_body h5 {
+  color: #555;
+  font-weight: 600;
+  padding: 5px 0px;
+  padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+}
+.blog_list_body h5::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: rgba(122, 122, 122, 0.356);
+  left: 50%;
+  bottom: 0;
+  width: 20%;
+  transform: translateX(-50%);
+}
+.blog_list_body .date {
+  color: #7a7a7a;
+  padding: 5px 0px;
+  font-size: 12px;
+}
+.blog_list_body .img {
+  position: relative;
+  width: 100%;
+}
+.blog_list_body .img .date {
+  position: absolute;
+  height: 50px;
+  background: white;
+  width: 50px;
+  text-align: center;
+  list-style: 50px;
+  color: var(--brand);
+  font-weight: 600;
+  border: 1px solid var(--brand);
+  top: 100px;
+  left: -10px;
+}
+.blog_list_body .img .date span {
+  display: block;
+}
+.blog_list_body .img img {
+  width: 100%;
+}
+.blog_list_body .description {
+  text-align: justify;
+  margin: 30px 0px;
+}
+.blog_list_body .readmore {
+  display: inline-block;
+  color: var(--brand);
+  border: 1px solid var(--brand);
+  width: fit-content;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog_list_body .readmore i {
+  padding-left: 5px;
+}
+.blog_list_body .readmore:hover {
+  background: var(--brand);
+  color: var(--white);
+}
+.blog_list_body .bottom_link {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  padding: 5px 0px;
+  margin: 20px 0px;
+}
+.blog_list_body .bottom_link li a {
+  color: #777777;
+}
+.blog_list_body .bottom_link li a span {
+  color: #334862;
+}
 footer {
   background: #777;
   padding: 50px 0px;
@@ -582,6 +699,7 @@ footer .mid_part li {
   align-items: center;
   border-bottom: 1px solid #9c9c9c;
   padding: 20px 0px;
+  flex-wrap: wrap;
 }
 footer .mid_part li:first-child {
   padding-top: 0;
@@ -592,7 +710,7 @@ footer .mid_part li:last-child {
 }
 footer .mid_part li .left {
   width: 72px;
-  height: 57px;
+  height: 72px;
   margin-right: 20px;
   position: relative;
 }
@@ -603,8 +721,8 @@ footer .mid_part li .left .date {
   position: absolute;
   left: 0;
   top: 0;
-  height: 59px;
-  width: 59px;
+  height: 100%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.4);
   text-align: center;
   display: flex;
@@ -618,6 +736,7 @@ footer .mid_part li .left .date span {
 }
 footer .mid_part li a {
   color: var(--white2);
+  flex: 1;
 }
 footer .right form input {
   background-color: rgba(255, 255, 255, 0.2);
